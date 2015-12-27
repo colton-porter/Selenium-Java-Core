@@ -1,5 +1,8 @@
 package com.mercuryTours.flights;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.support.FindBy;
 
 import com.orasi.core.interfaces.Button;
@@ -8,10 +11,11 @@ import com.orasi.core.interfaces.Listbox;
 import com.orasi.core.interfaces.RadioGroup;
 import com.orasi.core.interfaces.impl.internal.ElementFactory;
 import com.orasi.utils.OrasiDriver;
+import com.orasi.utils.Sleeper;
 
 public class FlightFinder {
 	OrasiDriver driver = null;
-	FlightFinderOutputDetails output = null;
+	Map<String, Object> data = new HashMap<String, Object>();
 	/**
 	 * Flight Details Area
 	 */
@@ -35,8 +39,9 @@ public class FlightFinder {
 	// *********************
 	// ** Build page area **
 	// *********************
-	public FlightFinder(OrasiDriver driver){
+	public FlightFinder(OrasiDriver driver, Map<String, Object> data){
 		this.driver = driver;		
+		this.data = data;
 		ElementFactory.initElements(driver, this);
 		
 	}
@@ -53,7 +58,7 @@ public class FlightFinder {
 		populateDetails(radType.getAllOptions().get(Randomness.))
 	}*/
 	
-	public void populateDetails(String type, String passengers, String departFromCity, String departMonth, String departDay, String arriveInCity, String returnMonth, String returnDay, String classType, String airline){
+	public Map<String, Object> populateDetails(String type, String passengers, String departFromCity, String departMonth, String departDay, String arriveInCity, String returnMonth, String returnDay, String classType, String airline){
 		lstPassengers.syncVisible();
 		radType.selectByOption(type);
 		lstPassengers.select(passengers);
@@ -67,48 +72,21 @@ public class FlightFinder {
 		radServiceClass.selectByOption(classType);
 		lstAirline.select(airline);
 
-		output = new FlightFinderOutputDetails(radType.getSelectedOption(), 
-				lstPassengers.getFirstSelectedOption().getText(),
-				lstDepartingFrom.getFirstSelectedOption().getText(),
-				lstDepartingMonth.getFirstSelectedOption().getText(),
-				lstDepartingDay.getFirstSelectedOption().getText(),
-				lstArrivingIn.getFirstSelectedOption().getText(),
-				lstReturnMonth.getFirstSelectedOption().getText(), 
-				lstReturnDay.getFirstSelectedOption().getText(), 
-				radServiceClass.getSelectedOption(), 
-				lstAirline.getFirstSelectedOption().getText());
-		
+		outputData();
 		btnContinue.click();
-		
+		return data;
 	}
 
-	public FlightFinderOutputDetails output(){
-		return output;
-	}
-	
-	public class FlightFinderOutputDetails{
-		public String type = ""; 
-		public String passengers = ""; 
-		public String departFromCity = ""; 
-		public String departMonth = ""; 
-		public String departDay = ""; 
-		public String arriveInCity = ""; 
-		public String returnMonth = ""; 
-		public String returnDay = ""; 
-		public String classType = ""; 
-		public String airline = "";
-		
-		public FlightFinderOutputDetails(String type, String passengers, String departFromCity, String departMonth, String departDay, String arriveInCity, String returnMonth, String returnDay, String classType, String airline){
-			this.type = type; 
-			this.passengers = passengers;
-			this.departFromCity = departFromCity; 
-			this.departMonth = departMonth; 
-			this.departDay = departDay; 
-			this.arriveInCity = arriveInCity; 
-			this.returnMonth = returnMonth; 
-			this.returnDay = returnDay; 
-			this.classType = classType; 
-			this.airline = airline;
-		}
+	private void outputData(){
+		data.put("FlightType", radType.getSelectedOption()); 
+		data.put("NumberPassengers", lstPassengers.getFirstSelectedOption().getText());
+		data.put("DepartureCity", lstDepartingFrom.getFirstSelectedOption().getText());
+		data.put("DepartureMonth", lstDepartingMonth.getFirstSelectedOption().getText());
+		data.put("DepartureDay", lstDepartingDay.getFirstSelectedOption().getText());
+		data.put("ArrivalCity", lstArrivingIn.getFirstSelectedOption().getText());
+		data.put("ReturnMonth", lstReturnMonth.getFirstSelectedOption().getText()); 
+		data.put("ReturnDay", lstReturnDay.getFirstSelectedOption().getText());
+		data.put("ServiceClass", radServiceClass.getSelectedOption());
+		data.put("AirlineName", lstAirline.getFirstSelectedOption().getText());
 	}
 }

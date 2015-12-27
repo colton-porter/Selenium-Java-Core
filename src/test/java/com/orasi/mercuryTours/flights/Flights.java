@@ -1,5 +1,8 @@
 package com.orasi.mercuryTours.flights;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
@@ -13,7 +16,6 @@ import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.Title;
 import ru.yandex.qatools.allure.model.SeverityLevel;
 
-import com.mercuryTours.LandingPage;
 import com.mercuryTours.Navigation;
 import com.mercuryTours.flights.FlightFinder;
 import com.mercuryTours.signOn.SignOnPage;
@@ -21,7 +23,7 @@ import com.orasi.utils.TestEnvironment;
 import com.orasi.utils.TestReporter;
 
 public class Flights extends TestEnvironment {
-
+	Map<String, Object> data = new HashMap<String, Object>();
     @BeforeTest(alwaysRun=true)
     @Parameters({ "runLocation", "browserUnderTest", "browserVersion", "operatingSystem", "environment" })
     public void setup(@Optional String runLocation, String browserUnderTest, String browserVersion, String operatingSystem, String environment) {
@@ -60,10 +62,13 @@ public class Flights extends TestEnvironment {
 		TestReporter.assertTrue(signOn.pageLoaded(),"Verify Sign-On Page is displayed");
 		signOn.login();
 		
-		FlightFinder flightFinder = new FlightFinder(driver);
+		FlightFinder flightFinder = new FlightFinder(driver, data);
 		TestReporter.assertTrue(flightFinder.pageLoaded(),"Verify Flight Finder Page is displayed");
-		flightFinder.populateDetails("roundtrip", "2", "Paris", "December", "28", "London", "January", "5", "Business","Unified Airlines" );
-		System.out.println(flightFinder.output().airline);
+		data = flightFinder.populateDetails("roundtrip", "2", "Paris", "December", "28", "London", "January", "5", "Business","Unified Airlines" );
+		
+		for (String key : data.keySet()){
+			System.out.println(key + " : " + data.get(key));
+		}
 		
     }
 
