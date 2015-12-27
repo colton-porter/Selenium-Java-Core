@@ -786,17 +786,24 @@ public class OrasiDriver implements WebDriver, JavaScriptExecutor, TakesScreensh
 	 * @see ://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html#getCapabilities()
 	 * @see ://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/Capabilities.html
 	 */
-	class Capabilities {
+	public class Capabilities {
 
 		public String browserName() {
+			if(driver instanceof HtmlUnitDriver) return ((HtmlUnitDriver) driver).getCapabilities().getBrowserName();
 			return ((RemoteWebDriver) driver).getCapabilities().getBrowserName();
 		}
 
 		public String browserVersion() {
+			if(driver instanceof HtmlUnitDriver) return ((HtmlUnitDriver) driver).getCapabilities().getVersion();
 			return ((RemoteWebDriver) driver).getCapabilities().getVersion();
 		}
 
 		public String platformOS() {
+			if(driver instanceof HtmlUnitDriver) {
+				return ((HtmlUnitDriver) driver).getCapabilities().getPlatform().name() + " "
+						+ ((HtmlUnitDriver) driver).getCapabilities().getPlatform().getMajorVersion() + "."
+						+ ((HtmlUnitDriver) driver).getCapabilities().getPlatform().getMinorVersion();
+			}
 			return ((RemoteWebDriver) driver).getCapabilities().getPlatform().name() + " "
 					+ ((RemoteWebDriver) driver).getCapabilities().getPlatform().getMajorVersion() + "."
 					+ ((RemoteWebDriver) driver).getCapabilities().getPlatform().getMinorVersion();

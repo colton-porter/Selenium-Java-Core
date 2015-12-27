@@ -277,6 +277,7 @@ public class ElementImpl implements Element {
 		}
 	}
 
+
 	@Override
 	public String getElementIdentifier() {
 		String locator = "";
@@ -362,6 +363,7 @@ public class ElementImpl implements Element {
 		return locator;
 
 	}
+
 
 	@Override
 	public String getElementLocatorInfo() {
