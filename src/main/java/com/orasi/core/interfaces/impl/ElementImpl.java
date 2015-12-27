@@ -296,8 +296,16 @@ public class ElementImpl implements Element {
 				elementField.setAccessible(true);
 
 				startPosition = elementField.get(element).toString().lastIndexOf(": ") + 2;
-				locator = elementField.get(element).toString().substring(startPosition,
-						elementField.get(element).toString().lastIndexOf("]"));
+				if(startPosition==1){
+					startPosition = elementField.get(element).toString().indexOf("=\"") + 2;
+					endPosition = elementField.get(element).toString().indexOf("\"", elementField.get(element).toString().indexOf("=\"") + 3);
+					if (startPosition == -1 | endPosition == -1)
+						locator = elementField.get(element).toString();
+					else
+						locator = elementField.get(element).toString().substring(startPosition, endPosition);
+				}else{
+					locator = elementField.get(element).toString().substring(startPosition,elementField.get(element).toString().lastIndexOf("]"));
+				}
 			} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
 				e.printStackTrace();
 			}
@@ -321,10 +329,8 @@ public class ElementImpl implements Element {
 
 		if (element instanceof HtmlUnitWebElement) {
 			startPosition = element.toString().indexOf(" ");
-			if (startPosition == -1)
-				locator = element.toString();
-			else
-				locator = element.toString().substring(startPosition, element.toString().indexOf("="));
+			if (startPosition == -1)locator = element.toString();
+			else locator = element.toString().substring(startPosition, element.toString().indexOf("="));
 		} else if (element instanceof ElementImpl) {
 			Field elementField = null;
 			try {
@@ -332,8 +338,16 @@ public class ElementImpl implements Element {
 				elementField.setAccessible(true);
 
 				startPosition = elementField.get(element).toString().lastIndexOf("->") + 3;
+				if(startPosition==2){
+					startPosition = elementField.get(element).toString().indexOf(" ");
+					if (startPosition == -1)
+						locator = elementField.get(element).toString();
+					else
+						locator = elementField.get(element).toString().substring(startPosition, elementField.get(element).toString().indexOf("="));
+				}else{
 				locator = elementField.get(element).toString().substring(startPosition,
 						elementField.get(element).toString().lastIndexOf(":"));
+				}
 			} catch (IllegalAccessException | NoSuchFieldException | SecurityException e) {
 				e.printStackTrace();
 			}
@@ -401,7 +415,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncPresent() {
-		return PageLoaded.syncPresent(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncPresent(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -413,7 +427,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncPresent(int timeout) {
-		return PageLoaded.syncPresent(getWrappedDriver(), timeout, PageLoaded.getSyncToFailTest(),  new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncPresent(getWrappedDriver(), timeout, PageLoaded.getSyncToFailTest(),  (Element)getWrappedElement());
 	}
 
 	/**
@@ -425,7 +439,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncPresent(int timeout, boolean returnError) {
-		return PageLoaded.syncPresent(getWrappedDriver(), timeout, returnError, new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncPresent(getWrappedDriver(), timeout, returnError, (Element)getWrappedElement());
 	}
 
 	/**
@@ -438,7 +452,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncVisible() {
-		return PageLoaded.syncVisible(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncVisible(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -450,7 +464,7 @@ public class ElementImpl implements Element {
 	 * 
 	 */
 	public boolean syncVisible(int timeout) {
-		return PageLoaded.syncVisible(getWrappedDriver(), timeout,PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncVisible(getWrappedDriver(), timeout,PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -463,7 +477,7 @@ public class ElementImpl implements Element {
 	 *
 	 */
 	public boolean syncVisible(int timeout, boolean returnError) {
-		return PageLoaded.syncVisible(getWrappedDriver(), timeout, returnError, new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncVisible(getWrappedDriver(), timeout, returnError, (Element)getWrappedElement());
 	}
 
 	/**
@@ -475,7 +489,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncHidden() {
-		return PageLoaded.syncHidden(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncHidden(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -487,7 +501,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncHidden(int timeout) {
-		return PageLoaded.syncHidden(getWrappedDriver(), timeout, PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncHidden(getWrappedDriver(), timeout, PageLoaded.getSyncToFailTest(),(Element)getWrappedElement());
 	}
 
 	/**
@@ -499,7 +513,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncHidden(int timeout, boolean returnError) {
-		return PageLoaded.syncHidden(getWrappedDriver(), timeout, returnError, new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncHidden(getWrappedDriver(), timeout, returnError, (Element)getWrappedElement());
 	}
 
 	/**
@@ -512,7 +526,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncEnabled() {
-		return PageLoaded.syncEnabled(getWrappedDriver(), getWrappedDriver().getElementTimeout(),PageLoaded.getSyncToFailTest(),  new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncEnabled(getWrappedDriver(), getWrappedDriver().getElementTimeout(),PageLoaded.getSyncToFailTest(),  (Element)getWrappedElement());
 	}
 
 	/**
@@ -525,7 +539,7 @@ public class ElementImpl implements Element {
 	 * 
 	 */
 	public boolean syncEnabled(int timeout) {
-		return PageLoaded.syncEnabled(getWrappedDriver(), timeout,PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncEnabled(getWrappedDriver(), timeout,PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -538,7 +552,7 @@ public class ElementImpl implements Element {
 	 *
 	 */
 	public boolean syncEnabled(int timeout, boolean returnError) {
-		return PageLoaded.syncEnabled(getWrappedDriver(), timeout, returnError, new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncEnabled(getWrappedDriver(), timeout, returnError, (Element)getWrappedElement());
 	}
 
 	/**
@@ -551,7 +565,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncDisabled() {
-		return PageLoaded.syncDisabled(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncDisabled(getWrappedDriver(), getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -565,7 +579,7 @@ public class ElementImpl implements Element {
 	 * 
 	 */
 	public boolean syncDisabled(int timeout) {
-		return PageLoaded.syncDisabled(getWrappedDriver(), timeout, PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncDisabled(getWrappedDriver(), timeout, PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -578,7 +592,7 @@ public class ElementImpl implements Element {
 	 *
 	 */
 	public boolean syncDisabled(int timeout, boolean returnError) {
-		return PageLoaded.syncDisabled(getWrappedDriver(), timeout, returnError, new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncDisabled(getWrappedDriver(), timeout, returnError, (Element)getWrappedElement());
 	}
 
 	/**
@@ -591,7 +605,7 @@ public class ElementImpl implements Element {
 	 * @author Justin
 	 */
 	public boolean syncTextInElement(String text) {
-		return PageLoaded.syncTextInElement(getWrappedDriver(), text, getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncTextInElement(getWrappedDriver(), text, getWrappedDriver().getElementTimeout(), PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -605,7 +619,7 @@ public class ElementImpl implements Element {
 	 * 
 	 */
 	public boolean syncTextInElement(String text, int timeout) {
-		return PageLoaded.syncTextInElement(getWrappedDriver(), text, timeout, PageLoaded.getSyncToFailTest(), new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncTextInElement(getWrappedDriver(), text, timeout, PageLoaded.getSyncToFailTest(), (Element)getWrappedElement());
 	}
 
 	/**
@@ -618,6 +632,6 @@ public class ElementImpl implements Element {
 	 *
 	 */
 	public boolean syncTextInElement(String text, int timeout, boolean returnError) {
-		return PageLoaded.syncTextInElement(getWrappedDriver(), text, timeout, returnError, new ElementImpl(getWrappedElement()));
+		return PageLoaded.syncTextInElement(getWrappedDriver(), text, timeout, returnError, (Element)getWrappedElement());
 	}
 }
