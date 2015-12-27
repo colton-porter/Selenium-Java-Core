@@ -1,0 +1,64 @@
+package com.mercuryTours.signOn;
+
+import java.util.ResourceBundle;
+
+import org.openqa.selenium.support.FindBy;
+
+import ru.yandex.qatools.allure.annotations.Step;
+
+import com.orasi.core.interfaces.Button;
+import com.orasi.core.interfaces.Textbox;
+import com.orasi.core.interfaces.impl.internal.ElementFactory;
+import com.orasi.utils.Constants;
+import com.orasi.utils.OrasiDriver;
+
+public class SignOnPage {
+OrasiDriver driver = null;
+	
+	@FindBy(name="userName") private Textbox txtUsername;
+	@FindBy(name="password") private Textbox txtPassword;
+	@FindBy(name="login") private Button btnLogin;
+	final ResourceBundle userCredentialRepo = ResourceBundle.getBundle(Constants.USER_CREDENTIALS_PATH);
+
+	// *********************
+	// ** Build page area **
+	// *********************
+	public SignOnPage(OrasiDriver driver){
+		this.driver = driver;		
+		ElementFactory.initElements(driver, this);
+	}
+	
+	public boolean pageLoaded(){
+		driver.page().isDomComplete();
+		btnLogin.syncEnabled();
+	    return driver.getCurrentUrl().contains("mercurysignon");
+	}
+	
+	// *****************************************
+	// ***Page Interactions ***
+	// *****************************************
+
+	@Step("Login from the Sign-On Page")
+	public void login() {
+		String username = userCredentialRepo.getString("MERCURYTOURS_USER");		
+		String password = userCredentialRepo.getString("MERCURYTOURS_PASSWORD");	
+		loginWithDetails(username, password);
+	}
+	
+	@Step("Login from the Sign-On Page with invalid credentials")
+	public void loginNegative() {
+		loginWithDetails("blah", "blah");
+	}
+	
+	public boolean validateLoginStatus(){
+		driver.page().isDomComplete();
+		return driver.getCurrentUrl().contains("mercuryreservation");
+	}
+	
+	private void loginWithDetails(String username, String password) {
+		txtUsername.set(username);
+		txtPassword.setSecure(password);
+		btnLogin.click();
+	}
+
+}

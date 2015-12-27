@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<parameter name="browserUnderTest" value="html" />
+	<parameter name="environment" value="TEST" />
+	<parameter name="runLocation" value="local" />
+	<parameter name="browserVersion" value="" />
+	<parameter name="operatingSystem" value="windows" />
+  <test name="Login">
+    <classes>
+      <class name="com.orasi.mercuryTours.login.LoginFromLandingPage"/>
+      <class name="com.orasi.mercuryTours.login.LoginFromSignOnPage"/>
+    </classes>
+  </test> <!-- Login -->
+</suite> <!-- Suite -->
