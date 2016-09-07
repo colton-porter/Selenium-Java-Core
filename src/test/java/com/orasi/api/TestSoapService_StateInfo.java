@@ -14,7 +14,7 @@ import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
 import ru.yandex.qatools.allure.annotations.Title;
 
-public class TestSoapService {
+public class TestSoapService_StateInfo {
 	@Features("API")
 	@Stories("SoapService")
 	@Test(groups = { "regression", "interfaces", "textbox" })
