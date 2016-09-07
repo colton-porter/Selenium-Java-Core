@@ -3,12 +3,12 @@ package com.orasi.api;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
+import com.USZip.operations.GetInfoByAreaCode;
+import com.USZip.operations.GetInfoByCityName;
+import com.USZip.operations.GetInfoByState;
+import com.USZip.operations.GetInfoByZipCode;
 import com.orasi.utils.AlertHandler;
 import com.orasi.utils.TestReporter;
-import com.stateInfo.operations.GetInfoByCityName;
-import com.stateInfo.operations.GetInfoByState;
-import com.stateInfo.operations.GetInfoByZipCode;
-import com.stateInfo.operations.GetInfoByAreaCode;
 
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;

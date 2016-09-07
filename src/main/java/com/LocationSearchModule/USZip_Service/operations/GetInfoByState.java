@@ -1,11 +1,10 @@
-package com.stateInfo.operations;
+package com.LocationSearchModule.USZip_Service.operations;
 
+
+import com.LocationSearchModule.USZip_Service.USZip;
 import com.orasi.utils.XMLTools;
-import com.stateInfo.StateInfo;
 
-import jxl.read.biff.SharedStringFormulaRecord;
-
-public class GetInfoByState extends StateInfo {
+public class GetInfoByState extends USZip {
 
 	public GetInfoByState() {
 		setOperationName("GetInfoByState");

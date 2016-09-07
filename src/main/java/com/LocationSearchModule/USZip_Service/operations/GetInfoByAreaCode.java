@@ -1,9 +1,10 @@
-package com.stateInfo.operations;
+package com.LocationSearchModule.USZip_Service.operations;
 
+
+import com.LocationSearchModule.USZip_Service.USZip;
 import com.orasi.utils.XMLTools;
-import com.stateInfo.StateInfo;
 
-public class GetInfoByAreaCode extends StateInfo {
+public class GetInfoByAreaCode extends USZip {
 	public GetInfoByAreaCode() {
 
 		// Generate a request from a project xml file
