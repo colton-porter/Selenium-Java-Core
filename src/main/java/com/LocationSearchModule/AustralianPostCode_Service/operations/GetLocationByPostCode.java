@@ -6,14 +6,14 @@ import com.orasi.utils.XMLTools;
 public class GetLocationByPostCode extends AustralianPostCode {
 
 	public GetLocationByPostCode() {
-		setOperationName("GetLocationByPostCode");
+		setOperationName("GetAustralianLocationByPostCode");
 		setRequestDocument(XMLTools.loadXML(buildRequestFromWSDL("GetAustralianLocationByPostCode")));
 		removeComments();
 		removeWhiteSpace();
 	}
 
-	public void setPostCode(int postCode) {
-		setRequestNodeValueByXPath("/Envelope/Body/GetAustralianLocationByPostCode/PostCode", String.valueOf(postCode));
+	public void setPostCode(String postCode) {
+		setRequestNodeValueByXPath("/Envelope/Body/GetAustralianLocationByPostCode/PostCode", postCode);
 	}
 
 	public int getNumberOfResults() {

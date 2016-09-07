@@ -1,18 +1,15 @@
 package com.orasi.api;
 
-import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import com.LocationSearchModule.USZip_Service.operations.GetInfoByAreaCode;
 import com.LocationSearchModule.USZip_Service.operations.GetInfoByCityName;
 import com.LocationSearchModule.USZip_Service.operations.GetInfoByState;
 import com.LocationSearchModule.USZip_Service.operations.GetInfoByZipCode;
-import com.orasi.utils.AlertHandler;
 import com.orasi.utils.TestReporter;
 
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
-import ru.yandex.qatools.allure.annotations.Title;
 
 public class TestSoapService_USZip {
 	@Features("API")

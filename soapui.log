@@ -1,148 +1,72 @@
-2016-09-07 14:04:59,648 WARN  [SoapUI] Missing folder [C:\Users\colton.porter\Desktop\Selenium-Java-Core-SoapServices-Demo\.\ext] for external libraries
-2016-09-07 14:05:00,040 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\colton.porter\soapui-settings.xml]
-2016-09-07 14:05:01,016 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
-2016-09-07 14:05:01,043 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
-2016-09-07 14:05:01,044 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
-2016-09-07 14:05:01,045 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
-2016-09-07 14:05:01,046 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
-2016-09-07 14:05:01,047 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
-2016-09-07 14:05:01,048 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
-2016-09-07 14:05:01,050 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
-2016-09-07 14:05:01,051 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
-2016-09-07 14:05:01,053 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
-2016-09-07 14:05:01,636 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/uszip.asmx?wsdl]
-2016-09-07 14:05:01,636 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/uszip.asmx?wsdl
-2016-09-07 14:05:02,014 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:02,014 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:02,014 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:02,015 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:02,015 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:02,015 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:02,015 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:02,015 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:02,015 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:02,015 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:02,017 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:02,025 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:02,071 INFO  [Soap12HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:02,091 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:02,111 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:02,112 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:02,113 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:02,193 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:02,194 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:02,194 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:02,194 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:02,194 INFO  [Soap11HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:02,195 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:02,195 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:02,195 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:02,196 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:02,196 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:02,196 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:02,196 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:02,196 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:02,196 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:02,196 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:03,276 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/uszip.asmx?wsdl]
-2016-09-07 14:05:03,276 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/uszip.asmx?wsdl
-2016-09-07 14:05:03,582 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:03,582 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:03,582 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:03,582 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:03,582 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:03,582 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:03,583 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:03,583 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:03,583 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:03,583 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:03,597 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:03,597 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:03,597 INFO  [Soap12HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:03,598 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:03,598 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:03,598 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:03,599 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:03,599 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:03,599 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:03,599 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:03,599 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:03,600 INFO  [Soap11HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:03,600 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:03,600 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:03,600 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:03,600 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:03,601 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:03,601 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:03,601 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:03,601 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:03,601 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:03,601 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:03,824 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/uszip.asmx?wsdl]
-2016-09-07 14:05:03,824 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/uszip.asmx?wsdl
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:04,580 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:04,581 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:04,581 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:04,582 INFO  [Soap12HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:04,587 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:04,588 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:04,588 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:04,588 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:04,589 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:04,589 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:04,589 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:04,589 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:04,589 INFO  [Soap11HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:04,590 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:04,590 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:04,590 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:04,590 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:04,591 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:04,591 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:04,591 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:04,591 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:04,591 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:04,591 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:04,917 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/uszip.asmx?wsdl]
-2016-09-07 14:05:04,917 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/uszip.asmx?wsdl
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:06,562 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
-2016-09-07 14:05:06,563 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:06,563 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap12
-2016-09-07 14:05:06,564 INFO  [Soap12HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:06,564 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:06,564 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:06,564 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:06,565 INFO  [Soap12HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:06,565 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:06,565 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:06,565 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:06,565 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}USZipSoap
-2016-09-07 14:05:06,565 INFO  [Soap11HttpBindingImporter] importing endpoint http://www.webservicex.net/uszip.asmx
-2016-09-07 14:05:06,565 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByAreaCode
-2016-09-07 14:05:06,566 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByCity
-2016-09-07 14:05:06,566 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByState
-2016-09-07 14:05:06,566 INFO  [Soap11HttpBindingImporter] importing operation GetInfoByZIP
-2016-09-07 14:05:06,567 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:06,567 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:06,567 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:06,567 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpGet
-2016-09-07 14:05:06,567 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}USZipHttpPost
-2016-09-07 14:05:06,567 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}USZipHttpPost
+2016-09-07 16:17:57,640 WARN  [SoapUI] Missing folder [C:\Users\colton.porter\Desktop\Selenium-Java-Core-SoapServices-Demo\.\ext] for external libraries
+2016-09-07 16:17:58,010 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\colton.porter\soapui-settings.xml]
+2016-09-07 16:17:58,743 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2016-09-07 16:17:58,757 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2016-09-07 16:17:58,758 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2016-09-07 16:17:58,759 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2016-09-07 16:17:58,759 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2016-09-07 16:17:58,760 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2016-09-07 16:17:58,761 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2016-09-07 16:17:58,763 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2016-09-07 16:17:58,764 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2016-09-07 16:17:58,765 INFO  [SchemaUtils] Added default schema from file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2016-09-07 16:17:59,307 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/AustralianPostCode.asmx?WSDL]
+2016-09-07 16:17:59,307 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/AustralianPostCode.asmx?WSDL
+2016-09-07 16:17:59,645 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:17:59,646 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:17:59,648 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:17:59,653 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:17:59,654 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
+2016-09-07 16:17:59,654 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
+2016-09-07 16:17:59,654 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeSoap
+2016-09-07 16:17:59,654 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}AustralianPostCodeSoap
+2016-09-07 16:17:59,694 INFO  [Soap11HttpBindingImporter] importing endpoint http://www.webservicex.net/AustralianPostCode.asmx
+2016-09-07 16:17:59,710 INFO  [Soap11HttpBindingImporter] importing operation GetAustralianLocationByPostCode
+2016-09-07 16:17:59,725 INFO  [Soap11HttpBindingImporter] importing operation GetAustralianPostCodeByLocation
+2016-09-07 16:17:59,779 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeSoap12
+2016-09-07 16:17:59,779 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}AustralianPostCodeSoap12
+2016-09-07 16:17:59,780 INFO  [Soap12HttpBindingImporter] importing endpoint http://www.webservicex.net/AustralianPostCode.asmx
+2016-09-07 16:17:59,780 INFO  [Soap12HttpBindingImporter] importing operation GetAustralianLocationByPostCode
+2016-09-07 16:17:59,780 INFO  [Soap12HttpBindingImporter] importing operation GetAustralianPostCodeByLocation
+2016-09-07 16:17:59,781 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:17:59,781 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:17:59,781 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
+2016-09-07 16:17:59,781 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
+2016-09-07 16:18:00,248 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/AustralianPostCode.asmx?WSDL]
+2016-09-07 16:18:00,248 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/AustralianPostCode.asmx?WSDL
+2016-09-07 16:18:00,844 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:18:00,846 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:18:00,847 WARN  [SchemaUtils] Error: jar:file:/C:/Users/colton.porter/.m2/repository/eviware/soapui/4.5.0/soapui-4.5.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
+2016-09-07 16:18:00,848 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:18:00,849 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:18:00,849 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
+2016-09-07 16:18:00,849 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
+2016-09-07 16:18:00,849 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeSoap
+2016-09-07 16:18:00,849 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}AustralianPostCodeSoap
+2016-09-07 16:18:00,850 INFO  [Soap11HttpBindingImporter] importing endpoint http://www.webservicex.net/AustralianPostCode.asmx
+2016-09-07 16:18:00,850 INFO  [Soap11HttpBindingImporter] importing operation GetAustralianLocationByPostCode
+2016-09-07 16:18:00,851 INFO  [Soap11HttpBindingImporter] importing operation GetAustralianPostCodeByLocation
+2016-09-07 16:18:00,852 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeSoap12
+2016-09-07 16:18:00,852 INFO  [WsdlImporter] Importing binding {http://www.webserviceX.NET}AustralianPostCodeSoap12
+2016-09-07 16:18:00,852 INFO  [Soap12HttpBindingImporter] importing endpoint http://www.webservicex.net/AustralianPostCode.asmx
+2016-09-07 16:18:00,852 INFO  [Soap12HttpBindingImporter] importing operation GetAustralianLocationByPostCode
+2016-09-07 16:18:00,853 INFO  [Soap12HttpBindingImporter] importing operation GetAustralianPostCodeByLocation
+2016-09-07 16:18:00,853 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:18:00,853 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpGet
+2016-09-07 16:18:00,853 INFO  [WsdlImporter] Finding importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
+2016-09-07 16:18:00,853 INFO  [WsdlImporter] Missing importer for {http://www.webserviceX.NET}AustralianPostCodeHttpPost
