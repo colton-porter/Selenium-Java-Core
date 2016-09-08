@@ -2,10 +2,10 @@ package com.orasi.api;
 
 import org.testng.annotations.Test;
 
-import com.LocationSearchModule.USZip_Service.operations.GetInfoByAreaCode;
-import com.LocationSearchModule.USZip_Service.operations.GetInfoByCityName;
-import com.LocationSearchModule.USZip_Service.operations.GetInfoByState;
-import com.LocationSearchModule.USZip_Service.operations.GetInfoByZipCode;
+import com.LocationSearchModule.USZip_Service.operations_USZip.GetInfoByAreaCode;
+import com.LocationSearchModule.USZip_Service.operations_USZip.GetInfoByCityName;
+import com.LocationSearchModule.USZip_Service.operations_USZip.GetInfoByState;
+import com.LocationSearchModule.USZip_Service.operations_USZip.GetInfoByZipCode;
 import com.orasi.utils.TestReporter;
 
 import ru.yandex.qatools.allure.annotations.Features;

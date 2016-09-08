@@ -2,8 +2,8 @@ package com.orasi.api;
 
 import org.testng.annotations.Test;
 
-import com.LocationSearchModule.AustralianPostCode_Service.operations.GetLocationByPostCode;
-import com.LocationSearchModule.AustralianPostCode_Service.operations.GetPostCodeByLocation;
+import com.LocationSearchModule.AustralianPostCode_Service.operations_AUPost.GetLocationByPostCode;
+import com.LocationSearchModule.AustralianPostCode_Service.operations_AUPost.GetPostCodeByLocation;
 import com.orasi.utils.TestReporter;
 
 import ru.yandex.qatools.allure.annotations.Features;
@@ -16,7 +16,7 @@ public class TestSoapService_AustralianPostCode {
 	@Test(groups = { "regression", "interfaces", "textbox" })
 	public void postCodeTest() {
 		GetLocationByPostCode getInfo = new GetLocationByPostCode();
-		getInfo.setPostCode("four");
+		getInfo.setPostCode("NSW");
 		getInfo.sendRequest();
 		TestReporter.logAPI(getInfo.getNumberOfResults() == 0, "No records returned", getInfo);
 	}

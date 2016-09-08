@@ -1,4 +1,4 @@
-package com.LocationSearchModule.USZip_Service.operations;
+package com.LocationSearchModule.USZip_Service.operations_USZip;
 
 
 import com.LocationSearchModule.USZip_Service.USZip;

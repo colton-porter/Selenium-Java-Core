@@ -1,4 +1,4 @@
-package com.LocationSearchModule.AustralianPostCode_Service.operations;
+package com.LocationSearchModule.AustralianPostCode_Service.operations_AUPost;
 
 import com.LocationSearchModule.AustralianPostCode_Service.AustralianPostCode;
 import com.orasi.utils.XMLTools;
