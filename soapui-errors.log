@@ -1,0 +1,286 @@
+2016-09-09 09:22:30,259 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:22:30,262 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:22:30,268 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:22:30,269 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:26:36,557 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:26:36,562 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:26:36,575 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:26:36,575 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:28:17,112 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:28:17,114 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:28:17,124 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:28:17,124 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:28:46,949 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:28:46,952 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:28:46,962 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:28:46,962 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:36:07,023 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:36:07,027 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 09:36:07,038 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 09:36:07,038 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+2016-09-09 10:03:47,153 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-09 10:03:47,155 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)

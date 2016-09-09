@@ -1,11 +1,10 @@
 package com.LocationSearchModule.UKLocation_Service.operationsUK;
-import com.orasi.api.soapServices.core.SoapService;
+import com.LocationSearchModule.UKLocation_Service.UKLocation;
 import com.orasi.utils.XMLTools;
 
-
-public class GetUKLocationByPostCode extends SoapService{
+public class GetUKbyPostalCode extends UKLocation{
 	
-	public GetUKLocationByPostCode() {
+	public GetUKbyPostalCode() {
 
 
 		setOperationName("GetUKLocationByPostCode");
@@ -15,7 +14,7 @@ public class GetUKLocationByPostCode extends SoapService{
 	}
 
 	public void setPostCode(String PostCode){
-		setRequestNodeValueByXPath("/Envelope/Header/Body/GetUKLocationByPostCode/PostCode", PostCode);
+		setRequestNodeValueByXPath("/Envelope/Body/GetUKLocationByPostCode/PostCode", PostCode);
 	}
 	
 	public int getPostNumber(){
