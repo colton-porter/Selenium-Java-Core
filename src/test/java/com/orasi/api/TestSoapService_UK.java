@@ -6,7 +6,7 @@ import com.LocationSearchModule.UKLocation_Service.operationsUK.GetUKLocationByC
 import com.LocationSearchModule.UKLocation_Service.operationsUK.GetUKLocationByPostCode;
 import com.LocationSearchModule.UKLocation_Service.operationsUK.GetUKLocationByTown;
 import com.LocationSearchModule.UKLocation_Service.operationsUK.GetUKbyPostalCode;
-import com.orasi.utils.TestReporter;
+import com.LocationSearchModule.UKLocation_Service.operationsUK.ValidateUKAddress;
 
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
@@ -43,15 +43,17 @@ public class TestSoapService_UK {
 		//TestReporter.logAPI(getInfo.getPostNumber() == 0, "No records returned", getInfo);
 	}
 	
-	/*
+	
 	@Features("API")
 	@Stories("SoapService")
 	@Test(groups = { "regression", "interfaces", "textbox" })
-	public void PostCodeTest() {
-		GetUKLocationByPostCode getInfo = new GetUKLocationByPostCode();
-		getInfo.setPostCode("OX11");
+	public void ValidateUKAddressTest() {
+		ValidateUKAddress getInfo = new ValidateUKAddress();
+		getInfo.setUKAddressTown("London");
+		getInfo.setUKAddressCounty("Oxford");
+		getInfo.setUKAddressPost("OX11");
 		getInfo.sendRequest();
 		//TestReporter.logAPI(getInfo.getPostNumber() == 0, "No records returned", getInfo);
 	}
-	*/
+	
 }
