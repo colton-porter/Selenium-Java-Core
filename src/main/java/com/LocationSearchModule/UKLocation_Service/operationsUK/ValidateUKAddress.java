@@ -13,7 +13,13 @@ public class ValidateUKAddress  extends SoapService{
 		removeComments();
 		removeWhiteSpace();
 	}
-	public void setUKAddress(String UKAddresss){
-		setRequestNodeValueByXPath("/Envelope/Body/GetUKLocationByCounty/County", UKAddresss);
+	public void setUKAddressTown(String UKAddressTown){
+		setRequestNodeValueByXPath("/Envelope/Body/ValidateUKAddress/Town", UKAddressTown);
+	}
+	public void setUKAddressCounty(String UKAddressCounty){
+		setRequestNodeValueByXPath("/Envelope/Body/ValidateUKAddress/County", UKAddressCounty);
+	}
+	public void setUKAddressPost(String UKAddressPost){
+		setRequestNodeValueByXPath("/Envelope/Body/ValidateUKAddress/PostCode", UKAddressPost);
 	}
 }
