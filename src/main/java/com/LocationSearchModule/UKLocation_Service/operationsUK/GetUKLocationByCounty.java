@@ -18,6 +18,6 @@ public class GetUKLocationByCounty extends UKLocation{
 	
 	public int getCountyNumber(){
 		return getNumberOfResponseNodesByXPath(
-				"/Envelope/Body/GetUKLocationByCountyResponse/GetUKLocationByCountyResult/NewDataSet/Table");
+				"/Envelope/Body/GetUKLocationByCountyResponse/GetUKLocationByCountyResult");
 	}
 }

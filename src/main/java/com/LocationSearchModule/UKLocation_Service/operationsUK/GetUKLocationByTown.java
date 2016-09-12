@@ -19,6 +19,6 @@ public class GetUKLocationByTown extends UKLocation{
 
 	public int getTownNumber(){
 		return getNumberOfResponseNodesByXPath(
-			"/Envelope/Body/GetUKLocationByTownResponse/GetUKLocationByTownResult/NewDataSet/Table");
+			"/Envelope/Body/GetUKLocationByTownResponse/GetUKLocationByTownResult");
 }
 }

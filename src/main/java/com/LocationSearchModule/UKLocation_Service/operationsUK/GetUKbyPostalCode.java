@@ -19,6 +19,6 @@ public class GetUKbyPostalCode extends UKLocation{
 	
 	public int getPostNumber(){
 		return getNumberOfResponseNodesByXPath(
-				"/Envelope/Body/GetUKLocationByPostCodeResponse/GetUKLocationByPostCodeResult/NewDataSet/Table");
+				"/Envelope/Body/GetUKLocationByPostCodeResponse/GetUKLocationByPostCodeResult");
 	}
 }
