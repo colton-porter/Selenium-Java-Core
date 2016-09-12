@@ -19,7 +19,7 @@ public class ChangeFrequencyUnit extends ConvertFrequency{
 	}
 	
 	public int getNumberOfResults() {
-		return getNumberOfResponseNodesByXPath("/Envelope/Body/ChangeFrequencyUnitResponse/ChangeFrequencyUnitResult/NewDataSet/Table");
+		return getNumberOfResponseNodesByXPath("/Envelope/Body/ChangeFrequencyUnitResponse/ChangeFrequencyUnitResult");
 	}
 
 }
