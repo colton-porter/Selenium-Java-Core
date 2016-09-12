@@ -622,3 +622,29 @@ com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
 	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
 	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
 	at java.lang.Thread.run(Unknown Source)
+2016-09-12 12:01:15,444 ERROR [errorlog] java.net.MalformedURLException
+java.net.MalformedURLException
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.<init>(WsdlLoader.java:59)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.UrlWsdlLoader.<init>(UrlWsdlLoader.java:81)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:61)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlContext.createDefinitionLoader(WsdlContext.java:30)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.getDefinitionLoader(AbstractDefinitionContext.java:203)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:223)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 12 more
+2016-09-12 12:01:15,447 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Unknown Source)

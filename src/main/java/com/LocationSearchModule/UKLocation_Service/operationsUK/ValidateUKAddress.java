@@ -1,9 +1,9 @@
 package com.LocationSearchModule.UKLocation_Service.operationsUK;
 
-import com.orasi.api.soapServices.core.SoapService;
+import com.LocationSearchModule.UKLocation_Service.UKLocation;
 import com.orasi.utils.XMLTools;
 
-public class ValidateUKAddress extends SoapService{
+public class ValidateUKAddress extends UKLocation{
 	
 	public ValidateUKAddress() {
 		setOperationName("ValidateUKAddress");

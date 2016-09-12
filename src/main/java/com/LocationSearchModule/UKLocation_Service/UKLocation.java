@@ -8,6 +8,6 @@ public class UKLocation extends SoapService{
 		// TODO Auto-generated constructor stub
 
 	    setServiceName("UKInfoService");
-	    setServiceURL("http://www.webservicex.net/uklocation.asmx?WSDL");
+	    setServiceURL("http://www.webservicex.net/uklocation.asmx?wsdl");
 	}
 }

@@ -52,7 +52,7 @@ public class TestSoapService_UK {
 		ValidateUKAddress getInfo = new ValidateUKAddress();
 		getInfo.setUKTownCountyPost("Debden","Essex","CB11");
 		getInfo.sendRequest();
-//		TestReporter.logAPI(getInfo.getNumberOfResults() == 0, "No records returned", getInfo);
+		TestReporter.logAPI(getInfo.getNumberOfResults() == 0, "No records returned", getInfo);
 	}
 	
 }
