@@ -25,6 +25,10 @@ public class GetUKbyPostalCode extends UKLocation {
 	public Boolean getstuff() {
 		String x = getResponseNodeValueByXPath(
 				"/Envelope/Body/GetUKLocationByPostCodeResponse/GetUKLocationByPostCodeResult");
+		String y = getResponseNodeValueByXPath(
+							"/Envelope/Body/GetUKLocationByPostCodeResponse/GetUKLocationByPostCodeResult/String/NewDataSet/Table/Town[@text='Didcot']/../Country");
+		System.out.println(y.equals("Oxford"));
+		
 		if (x.contains("Didcot")) {
 			return true;
 

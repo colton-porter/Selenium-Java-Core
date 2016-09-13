@@ -5,17 +5,16 @@ import com.orasi.utils.XMLTools;
 
 public class ChangeFrequencyUnit extends ConvertFrequency{
 	
-	public ChangeFrequencyUnit() {
+	public ChangeFrequencyUnit(String scenario) {
 		setOperationName("ChangeFrequencyUnit");
 		setRequestDocument(XMLTools.loadXML(buildRequestFromWSDL("ChangeFrequencyUnit")));
+		setRequestNodeValueByXPath(getTestScenario("/excelsheets/freqConvert.xls", scenario));
 		removeComments();
 		removeWhiteSpace();
 	}
 	
-	public void setAndConvertFreq(int value,String fromUnit,String toUnit){
-		setRequestNodeValueByXPath("/Envelope/Body/ChangeFrequencyUnit/FrequencyValue", String.valueOf(value));
-		setRequestNodeValueByXPath("/Envelope/Body/ChangeFrequencyUnit/fromFrequencyUnit", fromUnit);
-		setRequestNodeValueByXPath("/Envelope/Body/ChangeFrequencyUnit/toFrequencyUnit", toUnit);
+	public void setFreqValue(String value){
+		setRequestNodeValueByXPath("/Envelope/Body/ChangeFrequencyUnit/FrequencyValue", value);
 	}
 	
 	public int getNumberOfResults() {

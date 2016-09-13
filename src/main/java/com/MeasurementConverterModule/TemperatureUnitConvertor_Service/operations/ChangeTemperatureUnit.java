@@ -1,21 +1,24 @@
 package com.MeasurementConverterModule.TemperatureUnitConvertor_Service.operations;
 
 import com.MeasurementConverterModule.TemperatureUnitConvertor_Service.ConvertTemp;
+import com.orasi.utils.ExcelDocumentReader;
 import com.orasi.utils.XMLTools;
 
 public class ChangeTemperatureUnit extends ConvertTemp{
 	
-	public ChangeTemperatureUnit() {
+	ExcelDocumentReader reader = new ExcelDocumentReader();
+	
+	public ChangeTemperatureUnit(String scenario) {
 		setOperationName("ChangeTemperatureUnit");
 		setRequestDocument(XMLTools.loadXML(buildRequestFromWSDL("ConvertTemp")));
+		setRequestNodeValueByXPath(getTestScenario("/excelsheets/tempConvert.xls", scenario));
 		removeComments();
 		removeWhiteSpace();
 	}
 	
-	public void setAndConvertUnit(int value, String fromUnit, String toUnit){
-		setRequestNodeValueByXPath("/Envelope/Body/ConvertTemp/Temperature", String.valueOf(value));
-		setRequestNodeValueByXPath("/Envelope/Body/ConvertTemp/FromUnit", fromUnit);
-		setRequestNodeValueByXPath("/Envelope/Body/ConvertTemp/ToUnit", toUnit);
+	public void setTemperature(String value){
+		setRequestNodeValueByXPath("/Envelope/Body/ConvertTemp/Temperature", value); 
+
 	}
 	
 	public int getNumberOfResults() {
