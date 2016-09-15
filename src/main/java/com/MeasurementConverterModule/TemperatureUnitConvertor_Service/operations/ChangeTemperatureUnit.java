@@ -1,12 +1,10 @@
 package com.MeasurementConverterModule.TemperatureUnitConvertor_Service.operations;
 
 import com.MeasurementConverterModule.TemperatureUnitConvertor_Service.ConvertTemp;
-import com.orasi.utils.ExcelDocumentReader;
 import com.orasi.utils.XMLTools;
 
 public class ChangeTemperatureUnit extends ConvertTemp{
 	
-	ExcelDocumentReader reader = new ExcelDocumentReader();
 	
 	public ChangeTemperatureUnit(String scenario) {
 		setOperationName("ChangeTemperatureUnit");
